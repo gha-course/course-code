@@ -13,7 +13,7 @@ jobs:
                 npm -v  
 
     parallel-job-macos:
-        runs-on: macos
+        runs-on: macos-latest
         steps:
             - name: View SW version
               run: sw_vers
@@ -25,4 +25,4 @@ jobs:
             - name: echo string
               run: Write-output "Windows String"
             - name: Error Step
-              run: doesnotexist          
+              run: Write-output "doesnotexist"          
